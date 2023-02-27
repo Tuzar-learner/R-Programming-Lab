@@ -1,0 +1,6 @@
+a = c(6,8,3,1,9,7,1,2)
+minimum = min(a)
+maximum = max(a)
+cat("The vector is",a,"\n")
+cat("Minimum number is",minimum,"\n")
+cat("Maximum number is",maximum)
