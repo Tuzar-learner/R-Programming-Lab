@@ -1,8 +1,7 @@
-n = readline(prompt = "Enter the depth of the triangle:")
-n=as.integer(n)
+n = as.integer(readline(prompt="Enter the depth of the triangle:"))
 for(i in 1:n)
 {
-  for(j in 1:(n-i+1))
+  for(j in (n-i+1):1)
   {
     cat(" ")
   }
@@ -11,9 +10,9 @@ for(i in 1:n)
   {
     if(num!=0)
     {
-      cat(num," ")
+      cat(num,"")
     }
-    num = num * (i-j)/j
+    num = num*(i-j)/j
   }
   cat("\n")
 }
